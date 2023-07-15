@@ -3,12 +3,12 @@
 //a = 2 b = 10 -> max = 10
 //a = -9 b = -3 -> max = -3
 
-Console.Clear();
-Console.WriteLine("введите число - ");
-int firstNumber = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите число - ");
-int secondNumber = Convert.ToInt32(Console.ReadLine());
-if (firstNumber > secondNumber)
-    Console.WriteLine(firstNumber);
-else
-   Console.WriteLine(secondNumber);
+//Console.Clear();
+//Console.WriteLine("введите число - ");
+//int firstNumber = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Введите число - ");
+//int secondNumber = Convert.ToInt32(Console.ReadLine());
+//if (firstNumber > secondNumber)
+//    Console.WriteLine($"max = {firstNumber}");
+//else
+//   Console.WriteLine($"max ={secondNumber}");
