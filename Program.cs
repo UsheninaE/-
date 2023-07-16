@@ -25,18 +25,30 @@
 //A (3,6,8); B (2,1,-7), -> 15.84
 //A (7,-5, 0); B (1,-1,9) -> 11.53
 
+//Console.Clear();
+//Console.WriteLine("Введите координаты точки А");
+//int xA = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Введите координаты точки А");
+//int yA = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Введите координаты точки А");
+//int zA = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Введите координаты точки B");
+//int xB = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Введите координаты точки B");
+//int yB = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Введите координаты точки B");
+//int zB = Convert.ToInt32(Console.ReadLine());
+//double distans = Math.Sqrt(Math.Pow(xA - xB, 2)+Math.Pow(yA - yB, 2)+Math.Pow(zA - zB, 2));
+//Console.WriteLine(Math.Round(distans, 2));
+
+//Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+//3 -> 1, 8, 27
+//5 -> 1, 8, 27, 64, 125
 Console.Clear();
-Console.WriteLine("Введите координаты точки А");
-int xA = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите координаты точки А");
-int yA = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите координаты точки А");
-int zA = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите координаты точки B");
-int xB = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите координаты точки B");
-int yB = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите координаты точки B");
-int zB = Convert.ToInt32(Console.ReadLine());
-double distans = Math.Sqrt(Math.Pow(xA - xB, 2)+Math.Pow(yA - yB, 2)+Math.Pow(zA - zB, 2));
-Console.WriteLine(Math.Round(distans, 2));
+Console.WriteLine("Введите число: ");
+int N = Convert.ToInt32(Console.ReadLine());
+int i;
+for (i = 1; i <= N; i++)
+    {
+        Console.Write($"{Math.Pow(i, 3)}, ");
+    }
