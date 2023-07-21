@@ -58,23 +58,23 @@ void InputArray(double[] array)
     for (int i = 0; i < array.Length; i++)
         array[i] = new Random().Next(-100, 100); 
 }
-int ReleaseArray(double[] array)
+double ReleaseArray(double[] array)
 {
     double max = array[0];
     double min = array[0];
-    double sum = 0;
-     for (int i = 0; i < array.Length; i++)
-        if (array[i] > max)
+        for (int i = 0; i < array.Length; i++)
+            if (array[i] > max)
             max = array[i];
+        for (int i = 0; i < array.Length; i++)      
             if (array[i] < min)
-                min = array[i];
-    sum = max - min;
+            min = array[i];
+    double sum = max - min;
     return sum;     
 }
 Console.Clear();
 Console.Write("Введите кол-во элементов в массиве: ");
 int n = Convert.ToInt32(Console.ReadLine());
-int[] array = new int[n];
+double[] array = new double[n];
 InputArray(array);
 Console.WriteLine($"[{string.Join(", ", array)}]");
 Console.WriteLine(ReleaseArray(array));
